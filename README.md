@@ -7,6 +7,11 @@ After 'carthage update', this script add a run script for Carthage, sets up the 
 
 ## Quickstart
 
+#### This script uses [Xcodeproj](https://github.com/CocoaPods/Xcodeproj). Install it by performing the following command:
+```console
+$ [sudo] gem install xcodeproj
+```
+
 #### 1. To use the script, open the ruby file (Source/carthage_build_setup.rb)
 > Enter the target of your project in @scriptTargets you want to apply the script to.
 ```ruby
