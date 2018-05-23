@@ -1,6 +1,8 @@
-# build-phases-script-for-carthage
+# xcode-build-script-for-carthage
 
-After 'carthage update', this script add a run script for Carthage and sets up the framework dependency to Xcode Build phases.
+If you use Carthage as the library dependency manager, you must manually configure the framework path to Build phases and Build settings in XCode after run 'carthage update'. However, using this script after run 'carthage update' eliminates the need to manually configure the framework path.
+
+After 'carthage update', this script add a run script for Carthage, sets up the framework dependency to Xcode Build phases and add framework search paths to XCode Build Settings
 
 
 ## Quickstart
