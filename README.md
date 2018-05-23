@@ -5,17 +5,13 @@ After 'carthage update', this script add a run script for Carthage and sets up t
 
 ## Quickstart
 
-#### To use the script, open the ruby file (Source/carthage_build_setup.rb)
-
+#### 1. To use the script, open the ruby file (Source/carthage_build_setup.rb)
 > Enter the target of your project in @scriptTargets you want to apply the script to.
-
 ```ruby
 # Constants
 @scriptTargets = []
 ```
-
 > Enter the path to your project.
-
 ```ruby
 # Constants
 CARTHAGE_FRAMEWORK_PATH = "YOUR_PROJECT_PATH/Carthage/Build/iOS"
@@ -24,29 +20,31 @@ CARTHAGE_FRAMEWORK_PATH = "YOUR_PROJECT_PATH/Carthage/Build/iOS"
 @project = Xcodeproj::Project.open"YOUR_PROJECT_PATH/CarthageScriptExample.xcodeproj"
 ```
 
-#### Move the script file to your project path.
-#### Run
+#### 2. Move the script file to your project path.
+
+#### 3. Run
 ```console
 $ carthage update
 $ ruby carthage_build_setup.rb
 ```
-#### Press check, your project Build Phases and Framework Search Paths in Build Settings
+
+#### 4. Press check, your project Build Phases and Framework Search Paths in Build Settings
 
 
 ## Example
 ### Building Project
 
 1. Install Carthage libraries.
-```console
-$ carthage update
-$ cd Scripts
-$ ruby carthage_build_phase_setup.rb
-```
-or
-```console
-$ cd Scripts
-$ sh carthage_update.sh
-```
+    ```console
+    $ carthage update
+    $ cd Scripts
+    $ ruby carthage_build_phase_setup.rb
+    ```
+      or
+    ```console
+    $ cd Scripts
+    $ sh carthage_update.sh
+    ```
 
 2. Open **`CarthageScriptExample.xcodeproj`** file.
 3. Press <kbd>⌘</kbd> + <kbd>B</kbd> to build the project.
@@ -62,3 +60,4 @@ These works are available under the MIT license. See the [LICENSE][license] file
 for more info.
 
 [ruby]: http://www.ruby-lang.org/en/
+[license]: LICENSE
