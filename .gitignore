@@ -3,3 +3,6 @@
 project.xcworkspace/
 xcuserdata/
 Pods/
+
+# Carthage
+Example/Carthage
