@@ -21,10 +21,10 @@ $ [sudo] gem install xcodeproj
 > Enter the path to your project.
 ```ruby
 # Constants
-CARTHAGE_FRAMEWORK_PATH = "YOUR_PROJECT_PATH/Carthage/Build/iOS"
+CARTHAGE_FRAMEWORK_PATH = "YOUR_CARTHAGE_FOLDER_PATH/Carthage/Build/iOS"
 
 # Variables
-@project = Xcodeproj::Project.open"YOUR_PROJECT_PATH/CarthageScriptExample.xcodeproj"
+@project = Xcodeproj::Project.open"YOUR_PROJECT_PATH/YOUR_PROJECT_NAME.xcodeproj"
 ```
 
 #### 2. Move the script file to your project path.
