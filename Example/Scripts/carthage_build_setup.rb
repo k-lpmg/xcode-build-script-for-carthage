@@ -1,6 +1,32 @@
 require 'set'
 require 'xcodeproj'
 
+class String
+    def black;          "\e[30m#{self}\e[0m" end
+    def red;            "\e[31m#{self}\e[0m" end
+    def green;          "\e[32m#{self}\e[0m" end
+    def brown;          "\e[33m#{self}\e[0m" end
+    def blue;           "\e[34m#{self}\e[0m" end
+    def magenta;        "\e[35m#{self}\e[0m" end
+    def cyan;           "\e[36m#{self}\e[0m" end
+    def gray;           "\e[37m#{self}\e[0m" end
+    
+    def bg_black;       "\e[40m#{self}\e[0m" end
+    def bg_red;         "\e[41m#{self}\e[0m" end
+    def bg_green;       "\e[42m#{self}\e[0m" end
+    def bg_brown;       "\e[43m#{self}\e[0m" end
+    def bg_blue;        "\e[44m#{self}\e[0m" end
+    def bg_magenta;     "\e[45m#{self}\e[0m" end
+    def bg_cyan;        "\e[46m#{self}\e[0m" end
+    def bg_gray;        "\e[47m#{self}\e[0m" end
+    
+    def bold;           "\e[1m#{self}\e[22m" end
+    def italic;         "\e[3m#{self}\e[23m" end
+    def underline;      "\e[4m#{self}\e[24m" end
+    def blink;          "\e[5m#{self}\e[25m" end
+    def reverse_color;  "\e[7m#{self}\e[27m" end
+end
+
 # Constants
 @scriptTargets = ["CarthageScriptExample", "CarthageScriptExampleTests"]
 CARTHAGE_FRAMEWORK_PATH = "../Carthage/Build/iOS"
@@ -36,7 +62,7 @@ def update_embed_frameworks
             # Remove old frameworks
             @project.frameworks_group.children.each do |child|
                 if matched.string == child.name
-                    puts "old #{child} removed"
+                    puts "old #{child} removed".gray
                     child.remove_from_project
                 end
             end
@@ -44,16 +70,16 @@ def update_embed_frameworks
             # Add new frameworks
             frameworks_group = @project.groups.find { |group| group.display_name == 'Frameworks' }
             framework_ref = frameworks_group.new_file("Carthage/Build/iOS/#{matched.string}")
-            build_file = build_phase.add_file_reference(framework_ref)
-            build_file.settings = { 'ATTRIBUTES' => ['RemoveHeadersOnCopy'] }
-            puts "new #{framework_ref} added"
+            build_phase.add_file_reference(framework_ref)
+            puts "new #{framework_ref} added".cyan
 		end
 	end
     
 end
 
 def carthage_build_phase_setup
-	puts "Start carthage_build_phase_setup"
+    puts "----------------------------------------------------".brown
+    puts "💁‍♂️ Start carthage_build_phase_setup".brown
 
 	@project.targets.each do |projectTarget|
 		isValidateTarget = false
@@ -64,7 +90,7 @@ def carthage_build_phase_setup
 		end
 		next if isValidateTarget == false
 
-		puts "🏃‍ Build target -> #{projectTarget.name}"
+        puts "\n🏃‍ Build target -> #{projectTarget.name}".magenta.bold.underline
 
 		# Carthage Script in Build Phases
 		existing_carthage_script = projectTarget.build_phases.find { |build_phase|
@@ -108,7 +134,8 @@ def carthage_build_phase_setup
 	end
 	@project.save
 
-	puts "Finish carthage_build_phase_setup"
+    puts "\n🙆‍♂️ Finish carthage_build_phase_setup".brown
+    puts "----------------------------------------------------".brown
 end
 
 carthage_build_phase_setup
