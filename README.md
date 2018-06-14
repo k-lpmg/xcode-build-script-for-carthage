@@ -59,12 +59,15 @@ $ ruby carthage_build_setup.rb
 5. Press check, your project Build Phases and Framework Search Paths in Build Settings
 
 **`Script Success`**
+
 ![script-success](https://user-images.githubusercontent.com/15151687/41411863-3951df72-7019-11e8-8271-9c4c9842f80a.png)
 
 **`Project Frameworks`**
-![project-frameworks](https://user-images.githubusercontent.com/15151687/41411964-87f51388-7019-11e8-9a0e-71b219a0bbe6.png)
+
+![project-frameworks](https://user-images.githubusercontent.com/15151687/41412149-0f3b7666-701a-11e8-9622-9aeda121df87.png)
 
 **`Build Phases`**
+
 ![build-phases](https://user-images.githubusercontent.com/15151687/41411974-8fa1ce00-7019-11e8-82db-afb468b96888.png)
 
 
