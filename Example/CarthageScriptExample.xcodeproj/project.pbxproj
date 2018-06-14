@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		409C93C5E87CBAEB5F304745 /* BuildFile in [CT] Embed Carthage Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		4767E638C56355686AA7BC06 /* SVProgressHUD.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 291F803C3A101AC8C8E6D9A5 /* SVProgressHUD.framework */; };
-		550DC04FB6D614B4FB2BBF89 /* BuildFile in CopyFiles */ = {isa = PBXBuildFile; };
+		4C300FD1D9667180633C7B4F /* SVProgressHUD.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C196748C7C75CB15A7D60D9B /* SVProgressHUD.framework */; };
+		509748C4D51AA530B4B503F3 /* BuildFile in CopyFiles */ = {isa = PBXBuildFile; };
+		6249F3E0C40E2757080EF53D /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E67E54CEB5475B3DA2805D15 /* SwiftyJSON.framework */; };
 		6559D93620B566E40017B852 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6559D93520B566E40017B852 /* AppDelegate.swift */; };
 		6559D93820B566E40017B852 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6559D93720B566E40017B852 /* ViewController.swift */; };
 		6559D93B20B566E40017B852 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6559D93920B566E40017B852 /* Main.storyboard */; };
@@ -17,8 +18,7 @@
 		6559D94020B566E50017B852 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6559D93E20B566E50017B852 /* LaunchScreen.storyboard */; };
 		6559D94B20B566E50017B852 /* CarthageScriptExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6559D94A20B566E50017B852 /* CarthageScriptExampleTests.swift */; };
 		6559D95720B567290017B852 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6559D95620B567290017B852 /* UIKit.framework */; };
-		93E62F457AC9A862D51290F2 /* BuildFile in CopyFiles */ = {isa = PBXBuildFile; };
-		BCBFAB51CEEF024D254F1381 /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1A592A579896322348B0E97D /* SwiftyJSON.framework */; };
+		774E8CD60FB902E5DBC280F1 /* BuildFile in CopyFiles */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +46,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1A592A579896322348B0E97D /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
-		291F803C3A101AC8C8E6D9A5 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
 		6559D93220B566E40017B852 /* CarthageScriptExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarthageScriptExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6559D93520B566E40017B852 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6559D93720B566E40017B852 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +57,8 @@
 		6559D94A20B566E50017B852 /* CarthageScriptExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarthageScriptExampleTests.swift; sourceTree = "<group>"; };
 		6559D94C20B566E50017B852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6559D95620B567290017B852 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C196748C7C75CB15A7D60D9B /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
+		E67E54CEB5475B3DA2805D15 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,8 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				6559D95620B567290017B852 /* UIKit.framework */,
-				1A592A579896322348B0E97D /* SwiftyJSON.framework */,
-				291F803C3A101AC8C8E6D9A5 /* SVProgressHUD.framework */,
+				E67E54CEB5475B3DA2805D15 /* SwiftyJSON.framework */,
+				C196748C7C75CB15A7D60D9B /* SVProgressHUD.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -141,8 +141,7 @@
 				6559D92E20B566E40017B852 /* Sources */,
 				6559D92F20B566E40017B852 /* Frameworks */,
 				6559D93020B566E40017B852 /* Resources */,
-				4C843BCB967AAA3EC228649A /* ;l */,
-				3C08041B104CF0AE68AD5D23 /* [CT] Carthage Script */,
+				8FCB8708E77A5A65847FD0AE /* [CT] Carthage Script */,
 			);
 			buildRules = (
 			);
@@ -161,7 +160,7 @@
 				6559D94320B566E50017B852 /* Frameworks */,
 				6559D94420B566E50017B852 /* Resources */,
 				8C7E51221349E20966851D70 /* [CT] Embed Carthage Frameworks */,
-				0449633AB3FB7BF843B5166F /* [CT] Carthage Script */,
+				3AA82B5514D606B2659CC7CD /* [CT] Carthage Script */,
 			);
 			buildRules = (
 			);
@@ -232,7 +231,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0449633AB3FB7BF843B5166F /* [CT] Carthage Script */ = {
+		3AA82B5514D606B2659CC7CD /* [CT] Carthage Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -249,7 +248,7 @@
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
 			showEnvVarsInLog = 1;
 		};
-		3C08041B104CF0AE68AD5D23 /* [CT] Carthage Script */ = {
+		8FCB8708E77A5A65847FD0AE /* [CT] Carthage Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -265,21 +264,6 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
 			showEnvVarsInLog = 1;
-		};
-		4C843BCB967AAA3EC228649A /* ;l */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Carthage/Build/iOS/SwiftyJSON.framework",
-			);
-			name = ";l";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
 /* End PBXShellScriptBuildPhase section */
 

@@ -57,7 +57,15 @@ $ ruby carthage_build_setup.rb
 3. Press <kbd>⌘</kbd> + <kbd>B</kbd> to build the project.
 4. Press check, the build is succeeded
 5. Press check, your project Build Phases and Framework Search Paths in Build Settings
-![script_completed](https://user-images.githubusercontent.com/15151687/41157050-48e473c8-6b5f-11e8-851c-6dcb725aaf0f.png)
+
+**`Script Success`**
+![script-success](https://user-images.githubusercontent.com/15151687/41411863-3951df72-7019-11e8-8271-9c4c9842f80a.png)
+
+**`Project Frameworks`**
+![project-frameworks](https://user-images.githubusercontent.com/15151687/41411964-87f51388-7019-11e8-9a0e-71b219a0bbe6.png)
+
+**`Build Phases`**
+![build-phases](https://user-images.githubusercontent.com/15151687/41411974-8fa1ce00-7019-11e8-82db-afb468b96888.png)
 
 
 ## LICENSE
