@@ -1,11 +1,16 @@
 # XCode Build Script for Carthage
+[![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=for-the-badge)](https://raw.githubusercontent.com/k-lpmg/RealmWrapper/master/LICENSE)
+
 
 If you use [Carthage](https://github.com/Carthage/Carthage) as the library dependency manager, you must manually configure the framework path to Build phases and Build settings in XCode after run 'carthage update'. However, using this script after run 'carthage update' eliminates the need to manually configure the framework path.
 
 After 'carthage update', this script add a run script for [Carthage](https://github.com/Carthage/Carthage), sets up the framework dependency to Xcode Build phases and add framework search paths to XCode Build Settings
 
+- [Getting Started](#gettingstarted)
+- [Example](#example)
 
-## Quickstart
+
+## Getting Started
 
 #### This script uses [Xcodeproj](https://github.com/CocoaPods/Xcodeproj). Install it by performing the following command:
 ```console
@@ -39,7 +44,8 @@ $ ruby carthage_build_setup.rb
 
 
 ## Example
-### Building Project
+
+#### Building Project
 
 1. Install Carthage libraries.
     ```console
