@@ -1,12 +1,12 @@
 # XCode Build Script for Carthage
-[![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=for-the-badge)](https://raw.githubusercontent.com/k-lpmg/RealmWrapper/master/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat-square)](https://raw.githubusercontent.com/k-lpmg/RealmWrapper/master/LICENSE)
 
 
 If you use [Carthage](https://github.com/Carthage/Carthage) as the library dependency manager, you must manually configure the framework path to Build phases and Build settings in XCode after run 'carthage update'. However, using this script after run 'carthage update' eliminates the need to manually configure the framework path.
 
 After 'carthage update', this script add a run script for [Carthage](https://github.com/Carthage/Carthage), sets up the framework dependency to Xcode Build phases and add framework search paths to XCode Build Settings
 
-- [Getting Started](#gettingstarted)
+- [Getting Started](#getting-started)
 - [Example](#example)
 
 
