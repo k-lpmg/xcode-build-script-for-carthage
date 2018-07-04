@@ -1,10 +1,10 @@
 # XCode Build Script for Carthage
-[![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat-square)](https://raw.githubusercontent.com/k-lpmg/RealmWrapper/master/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](https://raw.githubusercontent.com/k-lpmg/RealmWrapper/master/LICENSE)
 
 
 If you use [Carthage](https://github.com/Carthage/Carthage) as the library dependency manager, you must manually configure the framework path to Build phases and Build settings in XCode after run 'carthage update'. However, using this script after run 'carthage update' eliminates the need to manually configure the framework path.
 
-After 'carthage update', this script add a run script for [Carthage](https://github.com/Carthage/Carthage), sets up the framework dependency to Xcode Build phases and add framework search paths to XCode Build Settings
+After `carthage update`, this script add a `run script` for [Carthage](https://github.com/Carthage/Carthage) to Build Phases, set up `frameworks dependency` and add `framework search paths` to Build Settings
 
 - [Getting Started](#getting-started)
 - [Example](#example)
@@ -40,7 +40,7 @@ $ carthage update
 $ ruby carthage_build_setup.rb
 ```
 
-#### 4. Press check, your project Build Phases and Framework Search Paths in Build Settings
+#### 4. Press check, your project `Build Phases`, `Frameworks` and `Framework Search Paths` in Build Settings
 
 
 ## Example
@@ -68,7 +68,7 @@ $ ruby carthage_build_setup.rb
 
 ![script-success](https://user-images.githubusercontent.com/15151687/41411863-3951df72-7019-11e8-8271-9c4c9842f80a.png)
 
-**`Project Frameworks`**
+**`Frameworks Dependency`**
 
 ![project-frameworks](https://user-images.githubusercontent.com/15151687/41412149-0f3b7666-701a-11e8-9622-9aeda121df87.png)
 
