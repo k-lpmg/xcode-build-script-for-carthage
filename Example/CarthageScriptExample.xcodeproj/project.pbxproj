@@ -12,7 +12,6 @@
 		6559D93B20B566E40017B852 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6559D93920B566E40017B852 /* Main.storyboard */; };
 		6559D93D20B566E50017B852 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6559D93C20B566E50017B852 /* Assets.xcassets */; };
 		6559D94020B566E50017B852 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6559D93E20B566E50017B852 /* LaunchScreen.storyboard */; };
-		6559D94B20B566E50017B852 /* CarthageScriptExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6559D94A20B566E50017B852 /* CarthageScriptExampleTests.swift */; };
 		6559D95720B567290017B852 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6559D95620B567290017B852 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,8 +34,6 @@
 		6559D93F20B566E50017B852 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6559D94120B566E50017B852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6559D94620B566E50017B852 /* CarthageScriptExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarthageScriptExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6559D94A20B566E50017B852 /* CarthageScriptExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarthageScriptExampleTests.swift; sourceTree = "<group>"; };
-		6559D94C20B566E50017B852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6559D95620B567290017B852 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -63,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				6559D93420B566E40017B852 /* CarthageScriptExample */,
-				6559D94920B566E50017B852 /* CarthageScriptExampleTests */,
 				6559D93320B566E40017B852 /* Products */,
 				6559D95520B567290017B852 /* Frameworks */,
 			);
@@ -89,15 +85,6 @@
 				6559D94120B566E50017B852 /* Info.plist */,
 			);
 			path = CarthageScriptExample;
-			sourceTree = "<group>";
-		};
-		6559D94920B566E50017B852 /* CarthageScriptExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				6559D94A20B566E50017B852 /* CarthageScriptExampleTests.swift */,
-				6559D94C20B566E50017B852 /* Info.plist */,
-			);
-			path = CarthageScriptExampleTests;
 			sourceTree = "<group>";
 		};
 		6559D95520B567290017B852 /* Frameworks */ = {
@@ -218,7 +205,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6559D94B20B566E50017B852 /* CarthageScriptExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
