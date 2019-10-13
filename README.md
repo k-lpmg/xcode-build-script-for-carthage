@@ -70,11 +70,11 @@ $ ruby carthage_build_setup.rb
 
 **`Frameworks Dependency`**
 
-![project-frameworks](https://user-images.githubusercontent.com/15151687/41412149-0f3b7666-701a-11e8-9622-9aeda121df87.png)
+![project-frameworks](https://user-images.githubusercontent.com/15151687/66711251-31b71b00-edc3-11e9-864f-c85fd9be1c38.png)
 
 **`Build Phases`**
 
-![build-phases](https://user-images.githubusercontent.com/15151687/41411974-8fa1ce00-7019-11e8-82db-afb468b96888.png)
+![build-phases](https://user-images.githubusercontent.com/15151687/66711252-3380de80-edc3-11e9-8ffb-ae31f4819e03.png)
 
 
 ## LICENSE
