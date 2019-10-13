@@ -43,13 +43,16 @@ def create_carthage_script
     build_phase.shell_script = CARTHAGE_SCRIPT
     
     input_paths = []
+    output_paths = []
     Dir.entries(CARTHAGE_FRAMEWORK_PATH).each do |entry|
         matched = /^(.*)\.framework$/.match(entry)
         if !matched.nil?
             input_paths.push("${SRCROOT}/Carthage/Build/iOS/#{entry}")
+            output_paths.push("$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/#{entry}")
         end
     end
     build_phase.input_paths = input_paths
+    build_phase.output_paths = output_paths
     return build_phase
 end
 
