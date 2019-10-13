@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11A5ED57D75265B07286B000 /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBEC3B9DFF0B4371366A2364 /* SwiftyJSON.framework */; };
+		440D18322C444BAC76647529 /* BuildFile in CopyFiles */ = {isa = PBXBuildFile; };
 		6559D93620B566E40017B852 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6559D93520B566E40017B852 /* AppDelegate.swift */; };
 		6559D93820B566E40017B852 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6559D93720B566E40017B852 /* ViewController.swift */; };
 		6559D93B20B566E40017B852 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6559D93920B566E40017B852 /* Main.storyboard */; };
 		6559D93D20B566E50017B852 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6559D93C20B566E50017B852 /* Assets.xcassets */; };
 		6559D94020B566E50017B852 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6559D93E20B566E50017B852 /* LaunchScreen.storyboard */; };
 		6559D95720B567290017B852 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6559D95620B567290017B852 /* UIKit.framework */; };
+		661F77AF5E82C917238FCDB0 /* BuildFile in CopyFiles */ = {isa = PBXBuildFile; };
+		92E020F18C5A31AFC687F43C /* SVProgressHUD.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5EDAD1C9FB8C8990280D75C7 /* SVProgressHUD.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5EDAD1C9FB8C8990280D75C7 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
 		6559D93220B566E40017B852 /* CarthageScriptExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarthageScriptExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6559D93520B566E40017B852 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6559D93720B566E40017B852 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +40,7 @@
 		6559D94120B566E50017B852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6559D94620B566E50017B852 /* CarthageScriptExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarthageScriptExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6559D95620B567290017B852 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BBEC3B9DFF0B4371366A2364 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				6559D95620B567290017B852 /* UIKit.framework */,
+				BBEC3B9DFF0B4371366A2364 /* SwiftyJSON.framework */,
+				5EDAD1C9FB8C8990280D75C7 /* SVProgressHUD.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -105,6 +113,7 @@
 				6559D92E20B566E40017B852 /* Sources */,
 				6559D92F20B566E40017B852 /* Frameworks */,
 				6559D93020B566E40017B852 /* Resources */,
+				2ABCAB8E3CBB0AE4492A0CD4 /* [CT] Carthage Script */,
 			);
 			buildRules = (
 			);
@@ -122,6 +131,7 @@
 				6559D94220B566E50017B852 /* Sources */,
 				6559D94320B566E50017B852 /* Frameworks */,
 				6559D94420B566E50017B852 /* Resources */,
+				A89D22B83A4E131A852CB461 /* [CT] Carthage Script */,
 			);
 			buildRules = (
 			);
@@ -190,6 +200,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2ABCAB8E3CBB0AE4492A0CD4 /* [CT] Carthage Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Carthage/Build/iOS/SwiftyJSON.framework",
+				"${SRCROOT}/Carthage/Build/iOS/SVProgressHUD.framework",
+			);
+			name = "[CT] Carthage Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwiftyJSON.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		A89D22B83A4E131A852CB461 /* [CT] Carthage Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Carthage/Build/iOS/SwiftyJSON.framework",
+				"${SRCROOT}/Carthage/Build/iOS/SVProgressHUD.framework",
+			);
+			name = "[CT] Carthage Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwiftyJSON.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6559D92E20B566E40017B852 /* Sources */ = {
@@ -277,8 +334,7 @@
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"(
-",
+					"(\n",
 					"\"$(PROJECT_DIR)/Carthage/Build/iOS\"\n)",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -343,8 +399,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"(
-",
+					"(\n",
 					"\"$(PROJECT_DIR)/Carthage/Build/iOS\"\n)",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;

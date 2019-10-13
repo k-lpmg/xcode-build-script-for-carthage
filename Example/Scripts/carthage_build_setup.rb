@@ -38,19 +38,22 @@ CARTHAGE_SCRIPT = "/usr/local/bin/carthage copy-frameworks"
 
 # Methods
 def create_carthage_script
-	build_phase = @project.new(Xcodeproj::Project::Object::PBXShellScriptBuildPhase)
-	build_phase.name = CARTHAGE_SCRIPT_NAME
-	build_phase.shell_script = CARTHAGE_SCRIPT
+    build_phase = @project.new(Xcodeproj::Project::Object::PBXShellScriptBuildPhase)
+    build_phase.name = CARTHAGE_SCRIPT_NAME
+    build_phase.shell_script = CARTHAGE_SCRIPT
 
-	input_paths = []
-	Dir.entries(CARTHAGE_FRAMEWORK_PATH).each do |entry|
-		matched = /^(.*)\.framework$/.match(entry)
-		if !matched.nil?
-			input_paths.push("${SRCROOT}/Carthage/Build/iOS/#{entry}")
-		end
-	end
-	build_phase.input_paths = input_paths
-	return build_phase
+    input_paths = []
+    output_paths = []
+    Dir.entries(CARTHAGE_FRAMEWORK_PATH).each do |entry|
+        matched = /^(.*)\.framework$/.match(entry)
+        if !matched.nil?
+            input_paths.push("${SRCROOT}/Carthage/Build/iOS/#{entry}")
+            output_paths.push("$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/#{entry}")
+        end
+    end
+    build_phase.input_paths = input_paths
+    build_phase.output_paths = output_paths
+    return build_phase
 end
 
 def update_embed_frameworks
